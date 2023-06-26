@@ -1,4 +1,4 @@
-# Laravel 10 Boilerplate
+# Laravel 10 
 
 The goal of this project is to serve as a boilerplate for Laravel 10
 utilizing light-weight alpine linux images for nginx and php 8.2 (fpm).
@@ -28,21 +28,27 @@ Stack:
 
 The default docker-compose config here exposes ports if you want them.  See .env's "PORT FORWARDS"
 
-```shell
-cp ./env.example ./.env
-docker-compose up --build -d app nginx mysql
+# Rumbling Games Studio Laravel
 
-#docker-compose exec app php artisan migrate
+Brief description of the project.
 
-# grab a shell inside docker/app
-docker-compose exec -u root app /bin/sh
+## Prerequisites
 
-# then, inside shell
-npm install
+- PHP 8.2 or higher
+- Laravel 10
+- MySQL database
+- Postman (for testing APIs)
 
-# vite
-npm run dev -- --host
-```
+## Installation
+
+1. Clone the repository:
+
+   ```bash
+    git clone https://github.com/AbanoubSamuel/Rumbling_Laravel.git
+   
+    cd Rumbling_Laravel
+
+    composer install
 
 You can now access http://localhost:8022 (or whatever your FORWARD_NGINX_PORT is).
 
